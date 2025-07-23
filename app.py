@@ -76,19 +76,19 @@ if st.button("🔍 Predict My Cluster"):
     features = cluster_means.columns.tolist()
     cluster_avg = cluster_means.loc[cluster].values.tolist()
 
-x = np.arange(len(features))
-fig, ax = plt.subplots(figsize=(10, 5))
-ax.bar(x - 0.2, input_data[0], width=0.4, label="You", color="#4CAF50")
-ax.bar(x + 0.2, cluster_avg, width=0.4, label="Cluster Avg", color="#2196F3")
-ax.set_xticks(x)
-ax.set_xticklabels(features, rotation=45)
-ax.legend()
-
-for i, v in enumerate(input_data[0]):
-    ax.text(x[i] - 0.2, v + 0.02, f"{v:.2f}", ha='center', va='bottom', fontsize=8)
-
-for i, v in enumerate(cluster_avg):
-    ax.text(x[i] + 0.2, v + 0.02, f"{v:.2f}", ha='center', va='bottom', fontsize=8)
-
-st.pyplot(fig)
+    x = np.arange(len(features))
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.bar(x - 0.2, input_data[0], width=0.4, label="You", color="#4CAF50")
+    ax.bar(x + 0.2, cluster_avg, width=0.4, label="Cluster Avg", color="#2196F3")
+    ax.set_xticks(x)
+    ax.set_xticklabels(features, rotation=45)
+    ax.legend()
+    
+    for i, v in enumerate(input_data[0]):
+        ax.text(x[i] - 0.2, v + 0.02, f"{v:.2f}", ha='center', va='bottom', fontsize=8)
+    
+    for i, v in enumerate(cluster_avg):
+        ax.text(x[i] + 0.2, v + 0.02, f"{v:.2f}", ha='center', va='bottom', fontsize=8)
+    
+    st.pyplot(fig)
 
