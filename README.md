@@ -1,7 +1,5 @@
 # Student-Habits-Advisor
 
-# Academic Habit Analyzer
-
 A simple and interactive Streamlit web app that uses **K-Means Clustering** to analyze a student's academic and lifestyle habits and recommend personalized suggestions.
 
 ---
