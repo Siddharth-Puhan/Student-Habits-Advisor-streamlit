@@ -36,17 +36,6 @@ A simple and interactive Streamlit web app that uses **K-Means Clustering** to a
 
 ---
 
-## Project Structure
-
-Academic-Habit-Analyzer/
-├── app.py
-├── requirements.txt
-├── kmeans_model.pkl
-├── scaler.pkl
-├── dataframe.pkl
-├── cluster_means.csv
-└── README.md
-
 ## Setup Instructions (For Local Use)
 
 ```bash
