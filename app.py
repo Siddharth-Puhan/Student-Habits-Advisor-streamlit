@@ -76,7 +76,7 @@ if st.button("🔍 Predict My Cluster"):
     features = cluster_means.columns.tolist()
     cluster_avg = cluster_means.loc[cluster].values.tolist()
 
-    x = np.arange(len(features))
+x = np.arange(len(features))
 fig, ax = plt.subplots(figsize=(10, 5))
 ax.bar(x - 0.2, input_data[0], width=0.4, label="You", color="#4CAF50")
 ax.bar(x + 0.2, cluster_avg, width=0.4, label="Cluster Avg", color="#2196F3")
